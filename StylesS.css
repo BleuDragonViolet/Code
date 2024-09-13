@@ -1,0 +1,17 @@
+body {
+    margin: 0; /* Retire les marges par défaut */
+    background-color: #ccffcc; /* Applique un fond vert clair à toute la page */
+    font-family: Arial, sans-serif; /* Optionnel : change la police */
+}
+
+.tete {
+    text-align: center; /* Centre l'image horizontalement */
+    padding: 20px; /* Optionnel : ajoute un peu de padding autour de l'image */
+}
+
+.tete img {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    height: auto; /* Ajuste la hauteur proportionnellement pour conserver l'aspect de l'image */
+    display: block; /* Supprime les espaces blancs autour de l'image */
+    margin-top: 0; /* Assure que l'image est collée en haut de la page */
+}

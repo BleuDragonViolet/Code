@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1; /* Assure que le conteneur est au-dessus du canvas */
+}
+
+.rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: #424040;
+    border: 1px solid #999999;
+    border-radius: 10px; /* Ajoute des coins arrondis */
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.error-message {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    z-index: 2; /* Assure que le message d'erreur est au-dessus du conteneur */
+}
+
+.error-message.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
